@@ -129,10 +129,8 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 	private void puchCommentTrigger() throws IOException {
 		org.eclipse.egit.github.core.Repository r = null;
 		org.eclipse.egit.github.core.service.RepositoryService repService = new org.eclipse.egit.github.core.service.RepositoryService();
-		
-		String userName = getGHUserName();
-		String targetFolder = getGHTargetFolder();
-		String commitID = getGHCommitID();
+		org.eclipse.egit.github.core.service.CommitService comService = new org.eclipse.egit.github.core.service.CommitService();
+	   
 		
 		for (org.eclipse.egit.github.core.Repository repo : repService.getRepositories(userName)){
 			if(repo.getName().compareToIgnoreCase(targetFolder) == 0){
@@ -142,12 +140,16 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 		}
 
 		if(r != null) {
+			String userName = getGHUserName();
+			String targetFolder = getGHTargetFolder();
+		    String commitID = conService.getcommits(r).get(0).getsha();
 			org.eclipse.egit.github.core.client.GitHubClient client = new org.eclipse.egit.github.core.client.GitHubClient().setCredentials("", "");
 
 			org.eclipse.egit.github.core.CommitComment comment = new org.eclipse.egit.github.core.CommitComment();
 			String commit_comment = getCommitComment();
 			comment.setBody(commit_comment);
 
+			
 			org.eclipse.egit.github.core.service.CommitService comService = new org.eclipse.egit.github.core.service.CommitService(client);
 			comService.addComment(r, commitID, comment);
 		}
@@ -370,3 +372,4 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 
 	private static final Logger LOGGER = Logger.getLogger(GitHubPushTrigger.class.getName());
 }
+
