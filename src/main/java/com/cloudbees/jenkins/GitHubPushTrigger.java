@@ -143,7 +143,7 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 			String userName = getGHUserName();
 			String targetFolder = getGHTargetFolder();
 		    String commitID = conService.getcommits(r).get(0).getsha();
-			org.eclipse.egit.github.core.client.GitHubClient client = new org.eclipse.egit.github.core.client.GitHubClient().setCredentials("", "");
+			org.eclipse.egit.github.core.client.GitHubClient client = new org.eclipse.egit.github.core.client.GitHubClient().setCredentials("cs427testuser", "123qweasd");
 
 			org.eclipse.egit.github.core.CommitComment comment = new org.eclipse.egit.github.core.CommitComment();
 			String commit_comment = getCommitComment();
@@ -156,11 +156,11 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 	}
 	
 	/**
-	 * get current Github user name
+	 * get current Github user name of the repo
 	 * @return user name
 	 */
 	public String getGHUserName() {
-		return "modong";
+		return "uiuc-cs427-t12";
 	}
 	
 	/**
@@ -168,17 +168,10 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 	 * @return name of target folder
 	 */
 	public String getGHTargetFolder() {
-		return "cs427";
+		return "cs427-test";
 	}
 	
-	/**
-	 * get valid commit ID
-	 * @return commit ID
-	 */
-	public String getGHCommitID() {
-		return "7a0ae42d033742be8aa548de6a3ed45d8a5d663a";
-	}
-	
+
 	/**
 	 * Get commit comment string.
 	 * @return commit string
