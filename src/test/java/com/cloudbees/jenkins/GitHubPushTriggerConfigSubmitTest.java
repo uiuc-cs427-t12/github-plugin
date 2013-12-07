@@ -31,13 +31,6 @@ public class GitHubPushTriggerConfigSubmitTest extends HudsonTestCase {
 		GitHubPushTrigger.DescriptorImpl d = getDescriptor();
 		assertTrue(d.isManageHook());
 		assertEquals(new URL(WEBHOOK_URL), d.getHookUrl());
-
-		List<Credential> credentials = d.getCredentials();
-		assertNotNull(credentials);
-		assertEquals(1, credentials.size());
-		Credential credential = credentials.get(0);
-		assertEquals("jenkins", credential.username);
-		assertEquals("password", Secret.toString(credential.password));
 	}
 
 	public void testConfigSubmit_ManuallyManageHook() throws Exception {
@@ -51,16 +44,31 @@ public class GitHubPushTriggerConfigSubmitTest extends HudsonTestCase {
 		GitHubPushTrigger.DescriptorImpl d = getDescriptor();
 		assertFalse(d.isManageHook());
 	}
-
-	public void testPushComment() {
+	
+	/**
+	 * Verify username used by plugin
+	 */
+	public void testConfigUserName() {
 		GitHubPushTrigger test = new GitHubPushTrigger();
-		
-		assertEquals(test.getGHUserName(), "modong");
-		assertEquals(test.getGHTargetFolder(), "cs427");
-		assertEquals(test.getGHCommitID(), "7a0ae42d033742be8aa548de6a3ed45d8a5d663a");
-		assertEquals(test.getCommitComment(), "Test inside jenkins.");
+		assertEquals(test.getGHUserName(), "uiuc-cs427-t12");
 	}
 
+	/**
+	 * Verify repo of commit comment
+	 */
+	public void testConfigTargetFolder() {
+		GitHubPushTrigger test = new GitHubPushTrigger();
+		assertEquals(test.getGHTargetFolder(), "cs427-test");
+	}
+	
+	/**
+	 * Verify commit message triggered by build processing
+	 */
+	public void testConfigCommitComment() {
+		GitHubPushTrigger test = new GitHubPushTrigger();
+		assertEquals(test.getCommitComment(), "Test inside jenkins.");
+	}
+	
 	private GitHubPushTrigger.DescriptorImpl getDescriptor() {
 		return (GitHubPushTrigger.DescriptorImpl) GitHubPushTrigger.DescriptorImpl.get();
 	}
