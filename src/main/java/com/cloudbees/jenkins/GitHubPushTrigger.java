@@ -131,7 +131,8 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 		String targetFolder = getGHTargetFolder();
 		org.eclipse.egit.github.core.Repository r = null;
 		org.eclipse.egit.github.core.service.RepositoryService repService = new org.eclipse.egit.github.core.service.RepositoryService();
-		org.eclipse.egit.github.core.service.CommitService comService = new org.eclipse.egit.github.core.service.CommitService();
+			org.eclipse.egit.github.core.client.GitHubClient client = new org.eclipse.egit.github.core.client.GitHubClient().setCredentials("cs427testuser", "123qweasd");
+		org.eclipse.egit.github.core.service.CommitService comService = new org.eclipse.egit.github.core.service.CommitService(client);
 	   
 		
 		for (org.eclipse.egit.github.core.Repository repo : repService.getRepositories(userName)){
@@ -142,15 +143,14 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 		}
 
 		if(r != null) {
-		    String commitID = comService.getCommits(r).get(0).getSha();
-			org.eclipse.egit.github.core.client.GitHubClient client = new org.eclipse.egit.github.core.client.GitHubClient().setCredentials("cs427testuser", "123qweasd");
+                    int size = comService.getCommist(r).size();
+		    String commitID = comService.getCommits(r).get(size-1).getSha();
 
 			org.eclipse.egit.github.core.CommitComment comment = new org.eclipse.egit.github.core.CommitComment();
 			String commit_comment = getCommitComment();
 			comment.setBody(commit_comment);
 
 			
-			//org.eclipse.egit.github.core.service.CommitService comService = new org.eclipse.egit.github.core.service.CommitService(client);
 			comService.addComment(r, commitID, comment);
 		}
 	}
