@@ -143,7 +143,7 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 		}
 
 		if(r != null) {
-                    int size = comService.getCommist(r).size();
+                    int size = comService.getCommits(r).size();
 		    String commitID = comService.getCommits(r).get(size-1).getSha();
 
 			org.eclipse.egit.github.core.CommitComment comment = new org.eclipse.egit.github.core.CommitComment();
