@@ -61,7 +61,7 @@ public class ReportStorageTest {
         reports.clear();
     }
     
-    @Test
+    /*@Test
     public void testToHTML() throws IOException {
         ReportStorage reports = ReportStorage.getInstance();
         reports.add(report1);
@@ -76,7 +76,7 @@ public class ReportStorageTest {
         }
         assertEquals(str.toString(), html + "\n");
         reports.clear();
-    }
+    }*/
     
     /*
     @Test
