@@ -180,7 +180,7 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 	 * @return commit string
 	 */
 	public String getCommitComment()  {
-		return "<h1>Test inside jenkins.</h1>";
+		return "Test inside jenkins.";
 	}
 
 
