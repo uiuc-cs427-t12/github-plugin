@@ -108,7 +108,7 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 						cause = new GitHubPushCause(pushBy);
 					}
 					if (job.scheduleBuild(cause)) {
-						LOGGER.info("SCM changes detected in "+ job.getName()+". Triggering "+name);
+						LOGGER.info("SCM222222222 changes detected in "+ job.getName()+". Triggering "+name);
 						try {
 							puchCommentTrigger();
 						} catch (IOException e) {
@@ -131,10 +131,10 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 		String targetFolder = getGHTargetFolder();
 		org.eclipse.egit.github.core.Repository r = null;
 		org.eclipse.egit.github.core.service.RepositoryService repService = new org.eclipse.egit.github.core.service.RepositoryService();
-			org.eclipse.egit.github.core.client.GitHubClient client = new org.eclipse.egit.github.core.client.GitHubClient().setCredentials("cs427testuser", "123qweasd");
+		org.eclipse.egit.github.core.client.GitHubClient client = new org.eclipse.egit.github.core.client.GitHubClient().setCredentials("cs427testuser", "123qweasd");
 		org.eclipse.egit.github.core.service.CommitService comService = new org.eclipse.egit.github.core.service.CommitService(client);
-	   
-		
+
+
 		for (org.eclipse.egit.github.core.Repository repo : repService.getRepositories(userName)){
 			if(repo.getName().compareToIgnoreCase(targetFolder) == 0){
 				r = repo;
@@ -143,18 +143,21 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 		}
 
 		if(r != null) {
-                    int size = comService.getCommits(r).size();
-		    String commitID = comService.getCommits(r).get(size-1).getSha();
+			//int size = comService.getCommits(r).size();
+			String value = comService.getCommits(r).get(0).getUrl();
+			String[] values = value.split("/");
+			int length = values.length;
+			String commitId = values[length-1];
 
 			org.eclipse.egit.github.core.CommitComment comment = new org.eclipse.egit.github.core.CommitComment();
 			String commit_comment = getCommitComment();
 			comment.setBody(commit_comment);
 
-			
-			comService.addComment(r, commitID, comment);
+
+			comService.addComment(r, commitId, comment);
 		}
 	}
-	
+
 	/**
 	 * get current Github user name of the repo
 	 * @return user name
@@ -162,7 +165,7 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 	public String getGHUserName() {
 		return "uiuc-cs427-t12";
 	}
-	
+
 	/**
 	 * get Github targeted folder name
 	 * @return name of target folder
@@ -170,16 +173,16 @@ public class GitHubPushTrigger extends Trigger<AbstractProject<?,?>> implements 
 	public String getGHTargetFolder() {
 		return "cs427-test";
 	}
-	
+
 
 	/**
 	 * Get commit comment string.
 	 * @return commit string
 	 */
 	public String getCommitComment()  {
-		return "Test inside jenkins.";
+		return "<h1>Test inside jenkins.</h1>";
 	}
-	
+
 
 	/**
 	 * Returns the file that records the last/current polling activity.
