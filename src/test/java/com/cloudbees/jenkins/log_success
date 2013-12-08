@@ -1,0 +1,338 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from https://github.com/sclee8611/test.git
+Checking out Revision 90eab911f0a9df783d6a7a8ee53ecd3bc7e5607b (origin/master)
+Parsing POMs
+[workspace] $ java -cp /home/t12/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-agent-1.4.jar:/home/t12/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/latest/boot/plexus-classworlds-2.5.1.jar jenkins.maven3.agent.Maven31Main /home/t12/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/latest /home/t12/.jenkins/war/WEB-INF/lib/remoting-2.32.jar /home/t12/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-interceptor-1.4.jar /home/t12/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.4.jar 60964
+<===[JENKINS REMOTING CAPACITY]===>\00\00\00channel started
+log4j:WARN No appenders could be found for logger (org.apache.commons.beanutils.converters.BooleanConverter).
+log4j:WARN Please initialize the log4j system properly.
+Executing Maven:  -B -f /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/pom.xml package
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - Scanning for projects...
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - Scanning for projects...
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener -                                                                         
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - ------------------------------------------------------------------------
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - Building GitHub plugin 1.9-SNAPSHOT
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - ------------------------------------------------------------------------
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger -                                                                         
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - Building GitHub plugin 1.9-SNAPSHOT
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-hpi-plugin:1.74:validate (default-validate) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-hpi-plugin:1.74:validate (default-validate) @ github ---
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-enforcer-plugin:1.0.1:display-info (default) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-enforcer-plugin:1.0.1:display-info (default) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.plugins.enforcer.DisplayInfoMojo - Maven Version: 3.1.1
+[pool-1-thread-1] INFO org.apache.maven.plugins.enforcer.DisplayInfoMojo - JDK Version: 1.7.0_45 normalized as: 1.7.0-45
+[pool-1-thread-1] INFO org.apache.maven.plugins.enforcer.DisplayInfoMojo - OS Info: Arch: i386 Family: unix Name: linux Version: 3.5.0-23-generic
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-localizer-plugin:1.13:generate (default) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-localizer-plugin:1.13:generate (default) @ github ---
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-resources-plugin:2.5:resources (default-resources) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-resources-plugin:2.5:resources (default-resources) @ github ---
+[debug] execute contextualize
+[pool-1-thread-1] WARN org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[pool-1-thread-1] INFO org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - Copying 14 resources
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-compiler-plugin:2.3.2:compile (default-compile) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-compiler-plugin:2.3.2:compile (default-compile) @ github ---
+[pool-1-thread-1] WARN org.apache.maven.plugin.CompilerMojo - File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[pool-1-thread-1] INFO org.codehaus.plexus.compiler.javac.JavacCompiler - Compiling 2 source files to /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/classes
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- access-modifier-checker:1.4:enforce (default-enforce) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- access-modifier-checker:1.4:enforce (default-enforce) @ github ---
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-hpi-plugin:1.74:insert-test (default-insert-test) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-hpi-plugin:1.74:insert-test (default-insert-test) @ github ---
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- gmaven-plugin:1.3:generateTestStubs (test-in-groovy) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- gmaven-plugin:1.3:generateTestStubs (test-in-groovy) @ github ---
+[pool-1-thread-1] INFO org.codehaus.gmaven.plugin.stubgen.GenerateTestStubsMojo - No sources found for Java stub generation
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-resources-plugin:2.5:testResources (default-testResources) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-resources-plugin:2.5:testResources (default-testResources) @ github ---
+[debug] execute contextualize
+[pool-1-thread-1] WARN org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[pool-1-thread-1] INFO org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/src/test/resources
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.plugin.TestCompilerMojo - Nothing to compile - all classes are up to date
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-hpi-plugin:1.74:test-hpl (default-test-hpl) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-hpi-plugin:1.74:test-hpl (default-test-hpl) @ github ---
+[pool-1-thread-1] INFO org.jenkinsci.maven.plugins.hpi.TestHplMojo - Generating /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/test-classes/the.hpl
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-hpi-plugin:1.74:resolve-test-dependencies (default-resolve-test-dependencies) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-hpi-plugin:1.74:resolve-test-dependencies (default-resolve-test-dependencies) @ github ---
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- gmaven-plugin:1.3:testCompile (test-in-groovy) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- gmaven-plugin:1.3:testCompile (test-in-groovy) @ github ---
+[pool-1-thread-1] INFO org.codehaus.gmaven.plugin.compile.TestCompileMojo - No sources found to compile
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-surefire-plugin:2.9:test (default-test) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-surefire-plugin:2.9:test (default-test) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.plugin.surefire.SurefirePlugin - Surefire report directory: /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running InjectedTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Picking up existing exploded jenkins.war at /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/./target/jenkins-for-test
+Nov 16, 2013 8:19:49 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Nov 16, 2013 8:19:50 PM hudson.PluginManager$1$3$1 isDuplicate
+INFO: Ignoring /tmp/hudson4126052061137945489tmp/the.hpl because /tmp/hudson4126052061137945489tmp/the.hpl is already loaded
+Nov 16, 2013 8:19:51 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Nov 16, 2013 8:19:51 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Nov 16, 2013 8:19:51 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Nov 16, 2013 8:19:51 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Nov 16, 2013 8:19:51 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Nov 16, 2013 8:19:54 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Nov 16, 2013 8:19:54 PM hudson.TcpSlaveAgentListener <init>
+INFO: JNLP slave agent listener started on TCP port 56914
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping ant
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping javadoc
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping github-api
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping git
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping multiple-scms
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping github
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping maven-plugin
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping cvs
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping ssh-slaves
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping subversion
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping translation
+Nov 16, 2013 8:19:56 PM hudson.PluginWrapper stop
+INFO: Stopping ui-samples-plugin
+Nov 16, 2013 8:19:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Nov 16, 2013 8:19:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Nov 16, 2013 8:19:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Nov 16, 2013 8:19:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Nov 16, 2013 8:19:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Nov 16, 2013 8:19:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Nov 16, 2013 8:20:00 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Nov 16, 2013 8:20:00 PM hudson.TcpSlaveAgentListener <init>
+INFO: JNLP slave agent listener started on TCP port 55333
+=== Starting CliSanityTest.testCliSanity
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping ant
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping javadoc
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping github-api
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping git
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping multiple-scms
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping github
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping maven-plugin
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping cvs
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping ssh-slaves
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping subversion
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping translation
+Nov 16, 2013 8:20:00 PM hudson.PluginWrapper stop
+INFO: Stopping ui-samples-plugin
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.139 sec
+Running com.cloudbees.jenkins.GitHubPushTriggerConfigSubmitTest
+Nov 16, 2013 8:20:01 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Nov 16, 2013 8:20:01 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Nov 16, 2013 8:20:01 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Nov 16, 2013 8:20:01 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Nov 16, 2013 8:20:01 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Nov 16, 2013 8:20:01 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Nov 16, 2013 8:20:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Nov 16, 2013 8:20:05 PM hudson.TcpSlaveAgentListener <init>
+INFO: JNLP slave agent listener started on TCP port 44749
+=== Starting GitHubPushTriggerConfigSubmitTest.testConfigSubmit_AutoManageHook
+Nov 16, 2013 8:20:13 PM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Nov 16, 2013 8:20:13 PM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Nov 16, 2013 8:20:13 PM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Nov 16, 2013 8:20:13 PM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping ant
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping javadoc
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping github-api
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping git
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping multiple-scms
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping github
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping maven-plugin
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping cvs
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping ssh-slaves
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping subversion
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping translation
+Nov 16, 2013 8:20:19 PM hudson.PluginWrapper stop
+INFO: Stopping ui-samples-plugin
+Nov 16, 2013 8:20:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Nov 16, 2013 8:20:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Nov 16, 2013 8:20:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Nov 16, 2013 8:20:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Nov 16, 2013 8:20:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Nov 16, 2013 8:20:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Nov 16, 2013 8:20:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Nov 16, 2013 8:20:21 PM hudson.TcpSlaveAgentListener <init>
+INFO: JNLP slave agent listener started on TCP port 59018
+=== Starting GitHubPushTriggerConfigSubmitTest.testConfigSubmit_ManuallyManageHook
+Nov 16, 2013 8:20:24 PM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Nov 16, 2013 8:20:24 PM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Nov 16, 2013 8:20:24 PM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Nov 16, 2013 8:20:24 PM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping ant
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping javadoc
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping github-api
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping git
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping multiple-scms
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping github
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping maven-plugin
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping cvs
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping ssh-slaves
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping subversion
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping translation
+Nov 16, 2013 8:20:29 PM hudson.PluginWrapper stop
+INFO: Stopping ui-samples-plugin
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.453 sec
+Running com.coravy.hudson.plugins.github.GithubLinkAnnotatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Running com.coravy.hudson.plugins.github.GithubUrlTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.coravy.hudson.plugins.github.GitHubRepositoryNameTest
+Nov 16, 2013 8:20:30 PM com.cloudbees.jenkins.GitHubRepositoryName create
+WARNING: Could not match URL gopher://gopher.floodgap.com
+Nov 16, 2013 8:20:30 PM com.cloudbees.jenkins.GitHubRepositoryName create
+WARNING: Could not match URL https//github.com/jenkinsci/jenkins
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+
+Results :
+
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-license-plugin:1.3:process (default) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-license-plugin:1.3:process (default) @ github ---
+[pool-1-thread-1] INFO com.cloudbees.maven.license.ProcessMojo - Generated /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/github/WEB-INF/licenses.xml
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - 
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - --- maven-hpi-plugin:1.74:hpi (default-hpi) @ github ---
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-hpi-plugin:1.74:hpi (default-hpi) @ github ---
+[pool-1-thread-1] INFO org.jenkinsci.maven.plugins.hpi.HpiMojo - Exploding webapp...
+[pool-1-thread-1] INFO org.jenkinsci.maven.plugins.hpi.HpiMojo - Copy webapp webResources to /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/github
+[pool-1-thread-1] INFO org.jenkinsci.maven.plugins.hpi.HpiMojo - Assembling webapp github in /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/github
+[pool-1-thread-1] INFO org.jenkinsci.maven.plugins.hpi.HpiMojo - Generating hpi /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/github.hpi
+[pool-1-thread-1] INFO org.jenkinsci.maven.plugins.hpi.HpiMojo - Generating /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/github/META-INF/MANIFEST.MF
+[pool-1-thread-1] INFO org.codehaus.plexus.archiver.jar.JarArchiver - Building jar: /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/github.hpi
+[pool-1-thread-1] INFO org.codehaus.plexus.archiver.jar.JarArchiver - Building jar: /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/github.jar
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - ------------------------------------------------------------------------
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - BUILD SUCCESS
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - ------------------------------------------------------------------------
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - Total time: 1:01.943s
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - Finished at: Sat Nov 16 20:20:33 CST 2013
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - Final Memory: 38M/355M
+[pool-1-thread-1] INFO hudson.maven.Maven3Builder$MavenExecutionListener - ------------------------------------------------------------------------
+[JENKINS] Archiving /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/pom.xml to /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/modules/com.coravy.hudson.plugins.github$github/builds/2013-11-16_20-19-25/archive/com.coravy.hudson.plugins.github/github/1.9-SNAPSHOT/github-1.9-SNAPSHOT.pom
+[JENKINS] Archiving /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/github.hpi to /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/modules/com.coravy.hudson.plugins.github$github/builds/2013-11-16_20-19-25/archive/com.coravy.hudson.plugins.github/github/1.9-SNAPSHOT/github-1.9-SNAPSHOT.hpi
+[JENKINS] Archiving /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/workspace/target/github.jar to /home/t12/.jenkins/jobs/gitTest_T12_Seungchul/modules/com.coravy.hudson.plugins.github$github/builds/2013-11-16_20-19-25/archive/com.coravy.hudson.plugins.github/github/1.9-SNAPSHOT/github-1.9-SNAPSHOT.jar
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - BUILD SUCCESS
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - Total time: 1:02.872s
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - Finished at: Sat Nov 16 20:20:34 CST 2013
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - Final Memory: 34M/347M
+[pool-1-thread-1] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+channel stopped
+Finished: SUCCESS

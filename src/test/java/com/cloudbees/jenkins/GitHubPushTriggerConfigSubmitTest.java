@@ -66,7 +66,7 @@ public class GitHubPushTriggerConfigSubmitTest extends HudsonTestCase {
 	 */
 	public void testConfigCommitComment() {
 		GitHubPushTrigger test = new GitHubPushTrigger();
-		assertEquals(test.getCommitComment(), "<h1>Test inside jenkins.</h1>");
+		assertEquals(test.getCommitComment(), "Test inside jenkins.");
 	}
 	
 	private GitHubPushTrigger.DescriptorImpl getDescriptor() {
