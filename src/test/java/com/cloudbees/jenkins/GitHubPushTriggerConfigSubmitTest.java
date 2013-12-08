@@ -50,7 +50,7 @@ public class GitHubPushTriggerConfigSubmitTest extends HudsonTestCase {
 	 */
 	public void testConfigUserName() {
 		GitHubPushTrigger test = new GitHubPushTrigger();
-		//assertEquals(test.getGHUserName(), "uiuc-cs427-t12");
+		assertEquals(test.getGHUserName(), "uiuc-cs427-t12");
 	}
 
 	/**
